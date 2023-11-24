@@ -14,7 +14,10 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 50px;
+    position: absolute;
+    top: 0;
     color: whitesmoke;
+    z-index: 2;
 }
 
 .navBar img{
@@ -42,7 +45,7 @@ a{
 
 .navBar .link ul li{
 
-    margin-right: 10px;
+    margin-left: 20px;
 
 }
 
@@ -66,4 +69,94 @@ a{
     background-color: aliceblue;
     color: black;
 
+}
+
+
+
+.navBarMobile{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    transition: .3s ease-in-out;
+    padding-top: 80px;
+    padding-left: 30px;
+    left: -100%;
+    display: none;
+}
+.navBarMobile.active{
+    left: 0;
+}
+.min.anim {
+    animation: 0.5s anim linear;
+}
+
+@keyframes anim {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.menubar{
+    width: 30px;
+    height: 30px;
+    background-color: #FFB800;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    border-radius: 25px;
+    z-index: 2;
+    display: none;
+}
+.navBarMobile ul{
+    list-style: none;
+}
+.navBarMobile ul li{
+    margin-bottom: 15px;
+}
+
+.postAdd{
+    position: fixed;
+    width: fit-content;
+    padding: 3px 10px;
+    height: 30px;
+    background-color: #FFB800;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border-radius: 25px;
+    z-index: 2;
+    display: none;
+    color: white;
+}
+
+
+/* --------------------------------Responsive ----------------------------------------------*/
+
+@media only screen and (max-width:768px) {
+    .navBar{
+        padding: 0px 30px;
+    }
+    .navBarMobile{
+            display: block;
+    }
+    .navBar .lan{
+        display: none;
+    
+    }
+    .navBar .link{
+        display: none;
+        
+    }
+    .menubar{
+            display: flex;
+    }
+    .postAdd{
+        display: none;
+    }
 }
