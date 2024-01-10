@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.allAds {
+  padding-top: 90px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.adsAreaA {
+  width: 100%;
+  height: fit-content;
+  margin-top: 20px;
+  display: flex;
+}
+
+.filters {
+  width: 20%;
+  z-index: 15;
+}
+
+.filters.active {
+    display: flex;
+}
+.filterback.active{
+  display: flex;
+}
+.filterIn {
+  width: 100%;
+  height: fit-content;
+  background: #fff;
+  box-shadow: 0px 4px 5.8px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 20px 10px;
+  font-weight: 500;
+}
+.filterIn div {
+  margin-bottom: 10px;
+}
+.location {
+  width: 100%;
+}
+.category .categoryIn {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+  margin-top: 10px;
+}
+.category .categoryIn div {
+  border-radius: 5px;
+  background-color: #e9e9e9;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  color: rgb(133, 133, 133);
+}
+/* .category .categoryIn div:hover {
+  background-color: #ffb800;
+} */
+.qty div{
+    display: flex;
+    grid-gap: 5px;
+    height: 40px;
+}
+.qty div input[type="text"]{
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+}
+.qty div button{
+   width: 50px;
+    font-size: 25px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterIn input[type="text"],input[type="number"],select{
+  width: 100%;
+  border: 0px;
+  /* box-shadow: 0px 4px 5.8px 0px rgba(0, 0, 0, 0.25); */
+  padding: 10px;
+  outline: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #e9e9e9;
+}
+.filterIn button {
+  width: 100%;
+  border: 0px;
+  background-color: #ffb800;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 5px;
+}
+.filters .close button{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #FFB800;
+  top: 35px;
+  right: 20px;
+  border: 0px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.filterback{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.64);
+  z-index: 5;
+  pointer-events: none;
+  position: fixed;
+  display: none;
+}
+
+.filterIn button:hover {
+  background-color: rgb(19, 19, 19);
+}
+
+.price .pIn {
+  display: flex;
+}
+.price .pIn input[type="text"] {
+  margin-top: 5px;
+}
+.ads {
+  width: 80%;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 15px;
+  position: relative;
+  padding: 40px 0px;
+}
+.results {
+  position: absolute;
+  font-size: 20px;
+  text-align: left;
+}
+.results span {
+  color: #ffb800;
+  margin-right: 5px;
+}
+.pagination{
+  position: absolute;
+  bottom: -10px;
+}
+.pagination button{
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border:  2px solid #FFB800;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.pagination button:hover{
+
+  background-color: #FFB800;
+  color: white;
+
+}
+.menubar.close{
+  display: none;
+}
+
+.filterBtn{
+  width: 50px;
+  height: 30px;
+  background-color: #FFB800;
+  top: 85px;
+  right: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  display: none;
+}
+
+/*------------------------------------------------------------------------------ CARD-------------------------------------------------------------- */
+
+.ads a {
+  color: black;
+}
+
+.ads .card {
+  width: 100%;
+  min-height: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 5.8px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  
+}
+.ads .card:hover .imgAd img {
+  transform: scale(1.2);
+}
+.ads .card h3 {
+  line-height: 25px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.ads .card h4 {
+  color: #ffb800;
+}
+
+.imgAd {
+  border-radius: 5px;
+  overflow: hidden;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgAd img {
+  width: 100%;
+  transition: 0.5s;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.info div {
+  display: flex;
+}
+.info div ul {
+  display: flex;
+  margin-right: 10px;
+}
+.ads .card li {
+  opacity: 0.7;
+  list-style: none;
+  margin-right: 5px;
+}
+
+/*------------------------------------------------------------------------------ CARD-------------------------------------------------------------- */
+@media only screen and (min-width:1600px) {
+
+  .ads {
+    grid-template-columns: auto auto auto auto;
+  }
+
+}
+
+@media only screen and (min-width:912px) {
+  .close{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:912px) {
+
+  .ads {
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .filters {
+    position: fixed;
+    width: 100%;
+    overflow: auto;
+    top: 0;
+    left:0;
+    bottom: 0;
+    z-index: 3;
+    height: 100vh;
+   
+    border-radius: 0px;
+    display: none;
+  }
+
+
+
+  .filters .filterIn{
+    border-radius: 0px;
+    min-height: 100vh;
+  }
+
+  .filterback {
+    display: none;
+  }
+
+
+  .filterIn {
+    padding: 20px 20px;
+    padding-top: 80px;
+  }
+  .filterBtn{
+    display: flex;
+    position: absolute;
+  }
+  .filterBtn{
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width:540px) {
+
+  .ads {
+    grid-template-columns: auto;
+  }
+  .adsAreaA{
+
+    padding-top: 20px;
+  }
+
+}

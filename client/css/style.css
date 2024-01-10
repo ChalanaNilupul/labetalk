@@ -1,0 +1,629 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* ----------------- Navigation Bar ------------------*/
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 6rem;
+  background-color: #121212;
+}
+
+.logo {
+  width: 30%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+  padding-left: 1%;
+}
+
+.nav_logo {
+  max-width: 50%;
+  height: auto;
+  padding-left: 0;
+  transition: 0.3s;
+}
+
+.nav_logo:hover {
+  max-width: 60%;
+}
+
+.language {
+  text-align: center;
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.l_eng {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.l_eng:hover {
+  color: #ffb800;
+  font-size: 1.3rem;
+}
+
+.slash {
+  font-family: "Poppins";
+  padding: 0 0.4rem;
+  color: #fff;
+}
+
+.l_sinhala {
+  font-family: "Noto Sans Sinhala", sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.l_sinhala:hover {
+  color: #ffb800;
+  font-size: 1.3rem;
+}
+
+.login_post {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.onlybtns {
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+  display: flex;
+  padding-right: 10%;
+}
+
+#nav_login_id {
+  font-family: "Poppins";
+  background: none;
+  cursor: pointer;
+}
+
+#nav_login_id:hover {
+  color: #ffb800;
+}
+
+#nav_post_id {
+  font-family: "Poppins";
+  width: 30%;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav_post_id:hover {
+  background-color: #fff;
+  color: #000000;
+  letter-spacing: 0.1rem;
+}
+
+.create_post_icon {
+  width: 30%;
+}
+
+/*---------------------------------------------------------------------*/
+
+.about_header {
+  background-color: #ffb800;
+  height: 30vh;
+  position: relative;
+}
+
+.about_text_field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.about_text {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* -----------------About us---------------------- */
+
+.main_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20%;
+  margin-bottom: 0;
+}
+
+.branding_logo_field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.about_description_field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin-right: 2%;
+}
+
+.wikunamu_logo img {
+  width: 100%;
+}
+
+.about_description_area {
+  padding: 20px;
+  background: #fdf9ed;
+  border: 1px solid #ffdc82;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.about_description p {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ----------------------Contact us---------------------- */
+
+.container {
+  max-width: 60%;
+  margin: 5% auto;
+  background-color: #ffffff;
+  padding: 5%;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container_fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_name {
+  display: flex;
+  gap: 2%;
+}
+
+.textbox {
+  flex: 1;
+  border-radius: 5px;
+  border: none;
+  background-color: #f3f3f3;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container_email,
+.container_message {
+  margin-top: 0.5%;
+}
+
+#txtmsg {
+  height: 25vh;
+  resize: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.textbox::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.container_SignUp input,
+button {
+  padding: 2%;
+  margin-bottom: 2%;
+  border: 1px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.container_SignUp  button {
+  background-color: #ffb800;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 100%;
+}
+
+.container_button {
+  text-align: right;
+  margin-top: 5%;
+}
+
+.container_SignUp  button:hover {
+  background-color: #ffc020;
+}
+
+/* ----------------------Sign Up---------------------- */
+
+.container_SignUp {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+
+.form{
+  display:flex ;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.error {
+  background-color: #ff4444;
+  margin-bottom: 15px;
+  padding: 5px;
+  color: white;
+  display: none;
+  justify-content: center;
+}
+.error.active {
+  display: flex;
+}
+
+.head {
+  padding-bottom: 20px;
+}
+
+.head h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: #333;
+}
+
+.list {
+  display: block;
+  text-align: center;
+}
+
+.txtsignup {
+  border-radius: 5px;
+  border: none;
+  background-color: #f3f3f3;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+}
+
+.regbutton {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.regbtn {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+
+.signup_regtxt {
+  font-size: 100%;
+}
+
+.alreadyaccess {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hvacc {
+  font-family: "Poppins", sans-serif;
+  color: #4b4b4b;
+  font-weight: 500;
+}
+
+.hvacc a {
+  text-decoration: none;
+  color: #1456ff;
+}
+
+/* ----------------------Sign in---------------------- */
+
+.fgtpswd {
+  width: 90%;
+  text-align: center;
+}
+
+.fgtpswd_txt a {
+  display: block;
+  text-align: right;
+  font-family: "Poppins", sans-serif;
+  color: #4b4b4b;
+  font-weight: 500;
+}
+
+/* ----------------------Account---------------------- */
+
+.profile_container {
+  margin: 10% auto;
+  align-items: center;
+  padding: 5%;
+  background-color: #fff;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+
+.headof_profile h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+.tabs_and_ads {
+  display: flex;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 0 auto;
+}
+
+.tab_name {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1.5%;
+  background: #ffb800;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  padding: 4%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tab_name:hover {
+  background-color: #ffc020;
+}
+
+.myads {
+  width: 70%;
+  margin-left: 10%;
+}
+
+.myad_head {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+hr {
+  color: #333;
+}
+
+/*-- settings --*/
+
+.settings_head {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+.settings {
+  width: 70%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.settings_basic {
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: 450;
+}
+
+#user_email {
+  cursor: not-allowed;
+}
+
+.settings_txt_fields {
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  border: none;
+  background-color: #f3f3f3;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+#user_email {
+  background-color: #fff;
+  padding-left: 0;
+}
+
+.settings_btns {
+  text-align: right;
+  margin-bottom: 5%;
+}
+
+.settings_update_btn {
+  border-radius: 5px;
+}
+
+.delete_logout_btn {
+  padding: 5%;
+  display: flex;
+}
+
+.delete_logout_both_btn {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.delete_logout_acc {
+  margin: 2%;
+  width: 50%;
+  border-radius: 5px;
+  padding: 1.5%;
+  border: none;
+}
+
+#password_update_btn {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#delete_acc_id {
+  background: #ff5a5a;
+  font-weight: 500;
+}
+
+#delete_acc_id:hover {
+  background: #ff2c2c;
+}
+
+#logout_id {
+  background: #00cc6a;
+  font-weight: 500;
+}
+
+#logout_id:hover {
+  background: #07aa5b;
+}
+
+/* For Responsive Design */
+@media (max-width: 912px) {
+  .container_SignUp {
+    padding: 30px 10px;
+    width: 90%;
+    margin: 10% auto;
+
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container_SignUp {
+    padding: 10px 10px;
+    width: 90%;
+    margin: 10% auto;
+  }
+  .head h1 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about_header {
+    height: 20vh;
+  }
+
+  .about_text {
+    font-size: 3rem;
+    line-height: 2;
+  }
+
+  #password_update_btn {
+    font-size: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #signup_regtxt_id {
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main_wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about_header {
+    height: 30vh;
+  }
+
+  .headof_profile h1 {
+    font-size: 1.5rem;
+  }
+
+  .tab_name {
+    font-size: 1rem;
+  }
+
+  .settings_head {
+    font-size: 1rem;
+  }
+
+  .settings_basic {
+    font-size: 1rem;
+  }
+
+  .settings_txt_fields {
+    font-size: 1rem;
+  }
+
+  #password_update_btn {
+    font-size: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #signup_regtxt_id {
+    font-size: 80%;
+  }
+}
