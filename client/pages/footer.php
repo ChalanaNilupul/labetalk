@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="../css/footer.css">
+        <script src="https://kit.fontawesome.com/8fe8067efd.js"
+            crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="footer">
@@ -34,7 +36,7 @@
                     </div>
                     <div class="c4 newsletter">
                         <h3>Newsletter</h3>
-                        <p>Subscribe for our newsletter gor new ads</p>
+                        <p>Subscribe for our newsletter for new ads</p>
                         <input type="email" name="mail" id="mail"> <br>
                         <button>Subscribe</button>
                         

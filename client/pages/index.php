@@ -45,7 +45,7 @@
 
                 include('../../server/DB_Connect.php');
 
-                $sql = "SELECT * FROM `ads` WHERE `status`='active' LIMIT 9";
+                $sql = "SELECT * FROM `ads` WHERE `status`='active' LIMIT 12";
             
                 $result = mysqli_query($con, $sql);
         
@@ -90,6 +90,9 @@
 
 
             </div>
+
+             <div class="allAddiv"><a href="./allAds.php" id="allAd"><button>View All</button></a></div>   
+
         </div>
 
        

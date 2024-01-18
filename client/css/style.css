@@ -225,6 +225,7 @@
   width: 100%;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  padding: 10px;
 }
 
 .container_email,
@@ -626,4 +627,11 @@ hr {
   #signup_regtxt_id {
     font-size: 80%;
   }
+}
+
+@media (min-width: 1300px) {
+.signIn{
+  margin: 10% 0;
+}
+
 }

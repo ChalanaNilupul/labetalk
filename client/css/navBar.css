@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 50px;
-    position: absolute;
+    position: fixed;
     top: 0;
     color: whitesmoke;
     z-index: 2;
@@ -66,8 +66,7 @@ a{
 
 .navBar .link button:hover{
 
-    background-color: aliceblue;
-    color: black;
+    background-color:#ffb700 ;
 
 }
 
@@ -113,6 +112,9 @@ a{
     border-radius: 25px;
     z-index: 4;
     display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 .navBarMobile ul{
     list-style: none;

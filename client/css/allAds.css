@@ -21,7 +21,7 @@
 
 .filters {
   width: 20%;
-  z-index: 15;
+  z-index: 1;
 }
 
 .filters.active {

@@ -1,3 +1,13 @@
+
+<?php
+
+include_once 'navBar.php';
+
+if(!isset($_SESSION["userEmail"])){
+    header("LOCATION:./signIn.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,9 +20,7 @@
 
 <body>
 
-<?php
-    include_once 'navBar.php';
-    ?>
+    
 
     <div class="container">
         <div class="form">
@@ -32,6 +40,10 @@
                 <input type="file" name="img2" id="img2" required class="input"><br>
                 <p>Image 3 </p>
                 <input type="file" name="img3" id="img3" required class="input"><br>
+                <p>Image 4 </p>
+                <input type="file" name="img4" id="img4" required class="input"><br>
+                <p>Image 5 </p>
+                <input type="file" name="img5" id="img5" required class="input"><br>
                 <p>Description </p>
                 <textarea name="description" id="description" placeholder="Description" cols="30" rows="10" required class="input"></textarea><br>
 
@@ -42,18 +54,26 @@
                     $date = date('Y-m-d h:i A');
                     $title = $_POST["title"];
                     $place = $_POST["place"];
-                    $img = "../Uploads/" . basename($_FILES["img"]["name"]);
-                    move_uploaded_file($_FILES["img"]["tmp_name"], $img);
+                    $img1 = "../Uploads/" . basename($_FILES["img1"]["name"]);
+                    move_uploaded_file($_FILES["img1"]["tmp_name"], $img1);
+                    $img2 = "../Uploads/" . basename($_FILES["img2"]["name"]);
+                    move_uploaded_file($_FILES["img2"]["tmp_name"], $img2);
+                    $img3 = "../Uploads/" . basename($_FILES["img3"]["name"]);
+                    move_uploaded_file($_FILES["img3"]["tmp_name"], $img3);
+                    $img4 = "../Uploads/" . basename($_FILES["img4"]["name"]);
+                    move_uploaded_file($_FILES["img4"]["tmp_name"], $img4);
+                    $img5 = "../Uploads/" . basename($_FILES["img5"]["name"]);
+                    move_uploaded_file($_FILES["img5"]["tmp_name"], $img5);
                     $category = $_POST["category"];
                     $description = $_POST["description"];
                     $price = $_POST['price'];
 
                     include('../../server/DB_Connect.php');
 
-                    $sql = "INSERT INTO `ads`(`time`,`title`, `place`, `price`, `description`, `category`, `status`, `img1`, `img2`, `img3`) VALUES ('" . $date . "','" . $title . "','" . $place . "','" . $price . "','" . $description . "','" . $category . "','pending','" . $img . "','" . $img . "','" . $img . "')";
+                    $sql = "INSERT INTO `ads`(`ownerMail`,`time`,`title`, `place`, `price`, `description`, `category`, `status`, `img1`, `img2`, `img3`, `img4`, `img5`) VALUES ('".$_SESSION["userEmail"]."','" . $date . "','" . $title . "','" . $place . "','" . $price . "','" . $description . "','" . $category . "','pending','" . $img1 . "','" . $img2 . "','" . $img3 . "','" . $img4 . "','" . $img5 . "')";
 
                     if (mysqli_query($con, $sql)) {
-                        echo "Successfull";
+                        echo "<div class='msg'>Post Added Successfully</div>";
                     } else {
                         echo "Error";
                     }

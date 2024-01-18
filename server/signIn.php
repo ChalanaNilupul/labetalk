@@ -1,5 +1,9 @@
 <?php
+
 session_start();
+?>
+
+<?php
 
 include('./DB_Connect.php');
 
@@ -22,7 +26,7 @@ if ($stmt) {
 
     // Check if there is a matching row
     if (mysqli_num_rows($result) > 0) {
-        $_SESSION["email"] = $email;
+        $_SESSION["userEmail"] = $email;
         echo "success";
     } else {
         echo "fail";

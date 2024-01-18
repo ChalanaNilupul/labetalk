@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8">
@@ -18,8 +18,8 @@
     include_once 'navBar.php';
     ?>
 
-  
-        <div class="container_SignUp">
+    <div class="form">
+        <div class="container_SignUp signIn">
             <div class="head">
                 <h1>User Login</h1>
             </div>
@@ -27,8 +27,8 @@
 
             </div>
             <div class="list">
-                <input type="text" name="email" class="txtsignup email" placeholder="E-mail" required>
-                <input type="password" name="password" class="txtsignup pass" placeholder="Password" required>
+                <input type="text" name="email" class="txtsignup email" placeholder="E-mail" >
+                <input type="password" name="password" class="txtsignup pass" placeholder="Password" >
             </div>
             <!-- <div class="fgtpswd">
                 <span class="fgtpswd_txt"><a href="#" target="new"> Forgot Password? </a></span>
@@ -40,7 +40,7 @@
                 <span class="hvacc"> Don't have an account ? <a href="./signUp.php"> Register </a> </span>
             </div>
         </div>
-   
+    </div>
 
     <script>
         $(document).ready(function() {
@@ -74,16 +74,18 @@
                         };
 
                         $.ajax({
-
+                           
                             type: 'POST',
                             url: '../../server/signIn.php', // Update with the correct path to your PHP file
                             data: dataSet,
                             success: function(response) {
 
-                                if (response === 'success') {
+                                console.log(response);
+                                
+                                if (response.trim()  === 'success') {
                                     window.location.href = './index.php';
                                 }
-                                if (response === 'fail') {
+                                if (response.trim()  === 'fail') {
                                     $('#error').addClass('active');
                                     $('#error').text('Email And Password Does Not Match');
                                 }

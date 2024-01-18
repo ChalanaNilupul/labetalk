@@ -1,204 +1,217 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(255, 255, 255);
+body {
+  background-color: rgb(255, 255, 255);
 }
 
-.landing{
-    width: 100%;
-    overflow-y: hidden;
-    height: 100vh;
-    position: relative;
+.landing {
+  width: 100%;
+  overflow-y: hidden;
+  height: 100vh;
+  position: relative;
 }
 
-.landing h1{
-    
+.landing h1 {
 }
-#govi{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 40vw;
-    transform: translate(-50%,-50%);
-    color: #323232;
-    font-size: 8vw;
+#govi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40vw;
+  transform: translate(-50%, -50%);
+  color: #323232;
+  font-size: 8vw;
 }
-.landing #back{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.ads{
-    padding: 20px 5%;
-    width: 100%;
-    height: fit-content;
-}
-.adsIn{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
-    grid-gap: 15px;
-    margin-top: 20px;
-    width: 100%;
-    height: fit-content;
+.landing #back {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
+.ads {
+  padding: 20px 5%;
+  width: 100%;
+  height: fit-content;
+}
+.adsIn {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  grid-gap: 15px;
+  margin-top: 20px;
+  width: 100%;
+  height: fit-content;
+}
 
-.search{
-    padding: 20px 5%;
-    display: flex;
+.search {
+  padding: 20px 5%;
+  display: flex;
 }
-.search input[type="text"]{
-    margin-bottom: 10px;
-    width: 100%;
-    border: 0px;
-    padding: 15px;
-    background-color: #d1d1d1;
-    margin: 0px 10px;
-    border-radius: 5px;
+.search input[type="text"] {
+  margin-bottom: 10px;
+  width: 100%;
+  border: 0px;
+  padding: 15px;
+  background-color: #d1d1d1;
+  margin: 0px 10px;
+  border-radius: 5px;
 }
-.search select{
-    width: 200px;
-    border-radius: 5px;
-    padding: 0px 10px;
-    border: 0px;
-    cursor: pointer;
-    background-color: #FFB800;
-    color: white;
+.search select {
+  width: 200px;
+  border-radius: 5px;
+  padding: 0px 10px;
+  border: 0px;
+  cursor: pointer;
+  background-color: #ffb800;
+  color: white;
 }
 .search select:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.search button {
+  width: 150px;
+  border: 0px;
+  background-color: #ffb800;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.search button:hover {
+  background-color: #e4a300;
+}
+/*------------------------------------------------------------------------------ CARD-------------------------------------------------------------- */
+.adsIn a {
+  color: black;
+}
+
+.adsIn .card {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 5.8px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.adsIn .card .imgAd {
+  height: 250px;
+}
+.adsIn .card:hover .imgAd img {
+  transform: scale(1.2);
+}
+.adsIn .card h3 {
+  line-height: 25px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.adsIn .card h4 {
+  color: #ffb800;
+}
+
+.imgAd {
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgAd img {
+  width: 100%;
+  transition: 0.5s;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.info div {
+  display: flex;
+}
+.info div ul {
+  display: flex;
+  margin-right: 10px;
+}
+.adsIn .card li {
+  opacity: 0.7;
+  list-style: none;
+  margin-right: 5px;
+}
+.allAddiv {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#allAd button {
+  background-color: #ffb800;
+  border: 0px;
+  color: white;
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#allAd button:hover {
+  background-color: #e4a300;
+}
+/*------------------------------------------------------------------------------ CARD-------------------------------------------------------------- */
+
+.cities {
+  padding: 30px 5%;
+}
+.cities ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  margin-top: 15px;
+}
+
+.cities li {
+  list-style: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+@media only screen and (min-width: 1600px) {
+  .adsIn {
+    grid-template-columns: auto auto auto auto;
   }
-  
-.search  button{
-    width: 150px;
-    border: 0px;
-    background-color:#FFB800 ;
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
-    transition: .3s;
-}
-.search  button:hover{
-    background-color:#e4a300 ;
-}
-/*------------------------------------------------------------------------------ CARD-------------------------------------------------------------- */
-.adsIn a{
-    color: black;
 }
 
-.adsIn .card{
-    width: 1005;
-    padding: 10px;
-    border-radius: 10px;
-    background: #FFF;
-    box-shadow: 0px 4px 5.8px 0px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
+@media only screen and (max-width: 912px) {
+  .adsIn {
+    grid-template-columns: auto auto;
+  }
 }
-.adsIn .card:hover .imgAd img{
-    transform: scale(1.2);
-}
-.adsIn .card h3{
-    line-height: 25px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: 400;
-}
-.adsIn .card h4{
-    color: #FFB800;
+@media only screen and (max-width: 768px) {
+  .cities ul {
+    grid-template-columns: auto auto auto;
+  }
 }
 
-.imgAd{
-    border-radius: 5px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media only screen and (max-width: 540px) {
+  .adsIn {
+    grid-template-columns: auto;
+  }
 }
-.imgAd img{
-    width: 100%;
-    transition: .5s;
-}
-.info{
-    display: flex;
-    justify-content: space-between;
-}
-.info div{
-    display: flex;
-}
-.info div ul{
-    display: flex;
-    margin-right: 10px;
-}
-.adsIn .card li{
-    opacity: .7;
-    list-style: none;
-    margin-right: 5px;
-}
-
-/*------------------------------------------------------------------------------ CARD-------------------------------------------------------------- */
-
-
-
-.cities{
-    padding: 30px 5%;
-   
-}
-.cities ul{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    margin-top: 15px;
-}
-
-.cities li{
-    list-style: none;
-    cursor: pointer;
-    width: fit-content;
-}
-
-
-@media only screen and (max-width:912px) {
-
-    .adsIn{
-        grid-template-columns: auto auto;
-    }
-
-}
-@media only screen and (max-width:768px) {
-
-    .cities ul{
-        
-        grid-template-columns: auto auto auto ;
-      
-    }
-
-}
-
-@media only screen and (max-width:540px) {
-
-    .adsIn{
-        grid-template-columns: auto ;
-    }
-
-}
-@media only screen and (max-width:375px) {
-
-    .cities ul{
-        grid-template-columns: auto auto;
-    }
-
+@media only screen and (max-width: 375px) {
+  .cities ul {
+    grid-template-columns: auto auto;
+  }
 }

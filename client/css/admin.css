@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu {
+  width: 20%;
+  background-color: rgb(19, 19, 19);
+  padding: 10px;
+  display: block;
+  position: relative;
+}
+.menu button {
+  width: 100%;
+  background-color: rgb(255, 208, 0);
+  cursor: pointer;
+  border: 0px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+.dash {
+}
+.dashIn {
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+.box .bIn {
+  height: 150px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 5.8px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.box .bIn div{
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.ads {
+  display: none;
+  overflow-y: auto;
+}
+.adsIn{
+    width: 100%;
+}
+.adsIn table{
+    width: 100%; border-collapse: collapse;
+}
+.adsIn table tr td{
+    text-align: center;
+}
+.adsIn table tr td img{
+    width: 150px;
+}
+#imgSec{
+    display: block;
+}
+.adsIn button{
+    background-color: rgb(120, 255, 127);
+    border: 0px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+.menu #logOut {
+  width: 90%;
+  background-color: rgb(255, 59, 59);
+  cursor: pointer;
+  border: 0px;
+  margin: 0px 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+}
+.content {
+  width: 80%;
+  padding: 10px;
+  position: relative;
+}
+
+.content div {
+  width: 100%;
+  height: 100%;
+}

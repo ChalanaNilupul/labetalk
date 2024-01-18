@@ -61,8 +61,8 @@ include('../../server/DB_Connect.php');
                             <img src='" . $row['img1'] . "' id='one' onclick='one()'>
                             <img src='" . $row['img2'] . "'  id='two' onclick='two()'>
                             <img src='" . $row['img3'] . "'  id='three' onclick='three()'>
-                            <img src='" . $row['img2'] . "'  id='four' onclick='four()'>
-                            <img src='" . $row['img3'] . "'  id='five' onclick='five()'>
+                            <img src='" . $row['img4'] . "'  id='four' onclick='four()'>
+                            <img src='" . $row['img5'] . "'  id='five' onclick='five()'>
                         </div>
                         <!-- <div class='next'>
                                 >
