@@ -17,10 +17,10 @@ session_start();
 <body>
     <div class="navBar">
         <div class="img"><a href="./index.php"><img src="../resources/logo.png" alt=""></a></div>
-        <div class="lan">
+        <!-- <div class="lan">
             <a href="">தமிழ் / </a>
             <a href="">සිං</a>
-        </div>
+        </div> -->
         <div class="link">
             <ul>
                 

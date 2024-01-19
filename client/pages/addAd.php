@@ -1,11 +1,12 @@
-
 <?php
 
 include_once 'navBar.php';
 
-if(!isset($_SESSION["userEmail"])){
+if (!isset($_SESSION["userEmail"])) {
     header("LOCATION:./signIn.php");
 }
+
+include('../../server/DB_Connect.php');
 
 ?>
 <!DOCTYPE html>
@@ -14,13 +15,14 @@ if(!isset($_SESSION["userEmail"])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Post Ad</title>
     <link rel="stylesheet" href="../css/addAd.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>
 
-    
+
 
     <div class="container">
         <div class="form">
@@ -29,7 +31,32 @@ if(!isset($_SESSION["userEmail"])){
                 <p>Title </p>
                 <input type="text" name="title" id="title" placeholder="Title" required class="input"><br>
                 <p>Location </p>
-                <input type="text" name="place" id="place" placeholder="Place" required class="input"><br>
+                <input type="text" name="place" id="place" placeholder="Location" required class="input place" style="outline:none;cursor:pointer" readonly><br>
+
+                <div class="location">
+                    <div class="locationIn">
+
+                        <?php
+                        $sql1 = "SELECT * FROM `district`";
+
+                        $resultC = mysqli_query($con, $sql1);
+
+                        if (mysqli_num_rows($resultC) > 0) {
+                            while ($rowC = mysqli_fetch_assoc($resultC)) {
+                                echo "<div class='lList'>
+                                <p class='dName'><b>" . $rowC['district_name'] . "</b></p>
+                                <ul class='list'> </ul>
+                                
+                                </div>  ";
+                            }
+                        }
+                        ?>
+                    </div>
+                </div>
+
+
+
+
                 <p>Price(Rs) </p>
                 <input type="text" name="price" id="price" placeholder="Price" required class="input"><br>
                 <p>Category </p>
@@ -68,15 +95,15 @@ if(!isset($_SESSION["userEmail"])){
                     $description = $_POST["description"];
                     $price = $_POST['price'];
 
-                    include('../../server/DB_Connect.php');
 
-                    $sql = "INSERT INTO `ads`(`ownerMail`,`time`,`title`, `place`, `price`, `description`, `category`, `status`, `img1`, `img2`, `img3`, `img4`, `img5`) VALUES ('".$_SESSION["userEmail"]."','" . $date . "','" . $title . "','" . $place . "','" . $price . "','" . $description . "','" . $category . "','pending','" . $img1 . "','" . $img2 . "','" . $img3 . "','" . $img4 . "','" . $img5 . "')";
+
+                    $sql = "INSERT INTO `ads`(`ownerMail`,`time`,`title`, `place`, `price`, `description`, `category`, `status`, `img1`, `img2`, `img3`, `img4`, `img5`) VALUES ('" . $_SESSION["userEmail"] . "','" . $date . "','" . $title . "','" . $place . "','" . $price . "','" . $description . "','" . $category . "','pending','" . $img1 . "','" . $img2 . "','" . $img3 . "','" . $img4 . "','" . $img5 . "')";
 
                     if (mysqli_query($con, $sql)) {
                         echo "<div class='msg'>Post Added Successfully</div>";
 
                         $mail = 'nilupul2001chalana@gmail.com';
-     
+
 
                         $to         = $email;
                         $mail_subject = 'Goviya.lk';
@@ -160,19 +187,16 @@ if(!isset($_SESSION["userEmail"])){
                         
                         
                         ";
-     
-
-      $header       = "From: {$mail}\r\nContent-Type: text/html;";
-
-      $send_mail_result = mail($to, $mail_subject, $email_body, $header);
-
-      if ($send_mail_result) {
-       
-      } else {
-        echo "Message Not Sent.";
-      }
 
 
+                        $header       = "From: {$mail}\r\nContent-Type: text/html;";
+
+                        $send_mail_result = mail($to, $mail_subject, $email_body, $header);
+
+                        if ($send_mail_result) {
+                        } else {
+                            echo "Message Not Sent.";
+                        }
                     } else {
                         echo "Error";
                     }
@@ -188,6 +212,77 @@ if(!isset($_SESSION["userEmail"])){
     <?php
     include_once 'footer.php';
     ?>
+
+
+    <script>
+        $(document).ready(function() {
+
+            $('.place').click(function(e) {
+                $('.location').toggleClass('active');
+                $(this).css('margin-bottom', '5px')
+            })
+
+            $(document).on('click', '.dName', function(e) {
+                var districtWord = $(this).text();
+                var parent = $(this).parent();
+
+                $('#place').val(districtWord);
+                parent.toggleClass('active');
+
+                if (parent.hasClass('active')) {
+                    var formData = {
+                        district: districtWord,
+                    };
+
+                    // AJAX request
+                    $.ajax({
+                        type: 'POST',
+                        url: '../../server/locationFetch.php',
+                        data: formData,
+                        success: function(response) {
+                            // Ensure that the '.dName' element is always present in the HTML content
+                            var newContent = "<p class='dName'><b>" + districtWord + "</b></p>" + response + "";
+                            parent.html(newContent);
+                        },
+                        error: function(xhr, status, error) {
+                            console.log(xhr.responseText);
+                            console.log(status);
+                            console.log(error);
+                            alert('Error occurred. Please try again.');
+                        }
+                    });
+                } else {
+                    parent.html("<p class='dName'><b>" + districtWord + "</b></p>");
+                }
+            });
+
+            $(document).on('click', '.cName', function(e) {
+                var parent = $(this).parent();
+                var city = $(this).text();
+                var dis = $(this).parent().find('p').text();
+
+                console.log(dis)
+
+                $('#place').val(dis + ',' + city);
+                parent.html("<p class='dName'><b>" + dis + "</b></p>");
+                $('.location').toggleClass('active');
+                parent.toggleClass('active');
+            })
+
+        });
+
+
+
+        function city() {
+            var target = $('.lList.active');
+            var targetText = $('.lList.active .dName').text();
+            $('.location').toggleClass('active');
+            target.html("<p class='dName'><b>" + targetText + "</b></p>");
+        }
+
+    </script>
+
+
 </body>
 
 </html>

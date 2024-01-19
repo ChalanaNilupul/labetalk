@@ -48,6 +48,37 @@ p{
     opacity: 0;
     pointer-events: none;
 }
+.location.active{
+    display: block;
+}
+.location{
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+    display: none;
+}
+.locationIn{
+    margin-top: 5px;
+    background-color: #f3f3f3;
+    padding: 5px;
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    overflow: auto;
+}
+.lList{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.location li{
+    list-style: none;
+    z-index: 2;
+
+}
+.location li:hover{
+    background-color: #ffffff;
+    
+}
 @keyframes msg {
     0%{
         display: flex;

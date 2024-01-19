@@ -1,0 +1,906 @@
+=Kandy 
+Peradeniya
+Katugastota
+Pallekele
+Gampola
+Nawalapitiya
+Akurana
+Alawatugoda
+Ankubura
+Ambatenna
+Daskara
+Daulagala
+Galagedara
+Galhinna
+Gelioya
+Hanguranketa
+Hapugastalawa
+Kadugannawa
+Katugastota
+Kundasale
+Madawala
+Menikdiwela
+Pilimatalawa
+Pussellawa
+Talatuoya
+Teldeniya
+Ulapane
+Watadeniya
+Wattegama
+Welamboda
+Weligalla
+Udadumbara
+
+=Matale
+Matale
+Dambulla
+Galewela
+Naula
+Pallepola
+Rattota
+Ukuwela
+Yatawatta
+
+
+=Nuwaraeliya
+Nuwaraeliya 
+Agrapatana
+Ambewela
+Bogawantalawa
+Bopattalawa
+Dayagama Bazaar
+Ginigathena
+Hapugastalawa
+Haggala
+Hanguranketha
+Hatton-Dikoya UC
+Kotagala
+Kotmale
+Labukele
+Laxapana
+Lindula-Talawakele UC
+Maskeliya
+Nildandahinna
+Nuwara Eliya
+Nanu Oya
+Norton Bridge
+Padiyapelella
+Ramboda
+Ragala
+Rikillagaskada
+Rozella
+Udapussallawa
+Walapane
+Watawala
+Norton
+Koththallena
+Pundaluoya
+Kandapola
+Pattipola
+
+	
+=Ampara
+Ampara
+Addalaichchenai
+Akkaraipattu
+Ampara
+Alayadivembu
+Damana
+Dehiattakandiya
+Irakkamam
+Kalmunai
+Kalmunai
+Karaitivu
+Lahugala
+Maha Oya
+Navithanveli
+Nintavur
+Padiyathalawa
+Pottuvil
+Sainthamaruthu
+Sammanthurai
+Thirukkovil
+Uhana
+
+
+=Batticaloa 
+Batticaloa
+Chenkalady
+Kattankudy
+Eravur
+Valaichchenai
+Pasikudah
+Vakarai
+Kiran
+Oddamavadi
+Araiyampathy
+Kaluvanchikudy
+Kokkadichcholai
+Vavunathivu
+Vellavely
+
+
+=Trincomalee
+Trincomalee
+Gomarankadawala
+Kantalai
+Kinniya
+Kuchchaveli
+Morawewa
+Muttur
+Siripura
+Seruvila
+Thampalakamam
+Trincomalee
+Verugal
+
+
+=Anuradhapura 
+Anuradhapura 
+Bulnewa
+Eppawala
+Galenbindunuwewa
+Galnewa
+Ganewalpola
+Habarana
+Horowupotana
+Kahatagasdigiliya
+Kebitigollawa
+Kekirawa
+Konapathirawa
+Konwewa
+Madatugama
+Mahailuppallama
+Maradankadawala
+Medawachchiya
+Mihintale
+Nochchiyagama
+Nachchaduwa
+Padawiya
+Palugaswewa
+Rambewa
+Seeppukulama
+Talawa
+Tambuttegama
+Thirappane
+Yakalla
+
+=Polonnaruwa
+Polonnaruwa
+Kaduruwela
+Hingurakgoda
+Minneriya
+Bakamuna
+Aralaganwila
+Medirigiriya
+Giritale
+Elahera
+Jayantipura
+Galamuna
+Lankapura
+Sungavila
+Manampitiya
+Siripura
+Welikanda
+Dimbulagala
+Thambala
+Pulastigama
+
+
+=Jaffna 
+Kayts
+Jaffna 
+Velanai
+Jaffna
+Karainagar
+Nallur
+Chavakachcheri
+Maruthankerney
+Point Pedro
+Karaveddy
+Kopay
+Tellippalai
+Uduvil
+Sandilipay
+Chankanai
+
+
+=Kilinochchi 
+Kilinochchi 
+Kandavalai
+Pallai
+Poonakary
+
+
+=Mannar 
+Mannar 
+Madhu
+Adampan
+Chilawathurai
+Nanaddan
+
+=Mullaitivu 
+Mullaitivu 
+Pandiyankulam
+Oddusuddan
+Puthukkudiyiruppu
+Thunukkai
+Ehatugaswewa
+
+
+=Vavuniya
+Vavuniya
+Nedunkerny
+Cheddikulam
+
+
+=Kurunegala 
+Kurunegala
+Kuliyapitiya 
+Girathalana
+Panagamuwa
+Narammala
+Wariyapola
+Nikaweratiya
+Pannala
+Galgamuwa
+Gomugomuwa
+Polgahawela
+Maho
+Alawwa
+Ibbagamuwa
+Giriulla
+Hiripitiya
+Dandagamuwa
+Dambadeniya
+Melsiripura
+Hettipola
+Panduwasnuwara
+Potuhera
+Mawathagama
+Yapahuwa
+Bingirya
+Pannawa
+Ridigama
+
+=Puttalam
+Puttalam
+Chilaw
+Anamaduwa
+Battuluoya
+Dankotuwa
+Eluvankulam
+Kalpitiya
+Madampe
+Mahawewa
+Marawila
+Mundel
+Nattandiya
+Nuraicholai
+Palavi
+Thillayadi
+Wennappuwa
+Katuneriya
+Nainamadama
+
+=Kegalle 
+Kegalle 
+Ambepussa
+Aranayaka
+Bulathkohupitiya
+Dehiovita
+Deraniyagala
+Galigamuwa
+Hemmathagama
+Karawanella
+Kitulgala
+Kotiyakumbura
+Mawanella
+Rambukkana
+Ruwanwella
+Thalgaspitiya
+Warakapola
+Yatiyanthota
+Ganthuna
+
+=Ratnapura
+Ratnapura
+Balangoda
+Embilipitiya
+Rakwana
+Pelmadulla
+Kuruwita
+Imbulpe
+Godakawela
+Kahawatta
+Eheliyagoda
+Weligepola
+Nivitigala
+Ayagama
+Kalawana
+Kolonna
+Panamure
+Pohorabawa
+Pallebedda
+Udawalawe
+
+=Galle 
+Galle 
+Karapitiya
+Unawatuna
+Ambalangoda 
+Hikkaduwa
+Ahangama
+Ahungalla
+Ambalangoda
+Baddegama
+Balapitiya
+Batapola
+Bentota
+Boossa
+Elpitiya
+Habaraduwa
+Hiniduma
+Hikkaduwa
+Imaduwa
+Karandeniya
+Koggala
+Kosgoda
+Mapalagama
+Nagoda
+Neluwa
+Pitigala
+Rathgama
+Thawalama
+Udugama
+Uragasmanhandiya
+Unawatuna
+Wanduramba
+Yakkalamulla
+
+=Hambantota 
+Hambantota
+Tangalle
+Ambalantota
+Beliatta
+Tissamaharama
+Middeniya
+Angunukolapelessa
+Walasmulla
+Weeraketiya
+
+
+=Matara
+Matara
+Aparekka
+Weligama
+Akuressa
+Tihagoda
+Mirissa
+Deniyaya
+Pitabeddara
+Kamburupitiya
+Thelijjawila
+Malimbada
+Welipitiya
+Denipitiya
+Welihinda
+Morawaka
+Nupe
+Devinuwara
+Gandara
+Hakmana
+Karaputugala
+
+
+=Badulla 
+Badulla
+Bandarawela
+Haputale
+Mahiyanganaya
+Diyatalawa
+Hali-Ela
+Ella
+Haldummulla
+Beragala
+Welimada
+Kandaketiya
+Meegahakivula
+Passara
+Lunugala
+Tennapanguwa
+Kumarapattiya
+
+=Monaragala
+Monaragala
+Bibile
+Buttala
+Wellawaya
+Kataragama
+Siyambalanduva
+medagama
+Thanamalvila
+Badalkubura
+Sevanagala
+madulla
+Siyambalanduwa
+Ethimale
+Medagama
+Thanamalwila
+Badalkumbura
+Madulla
+Okkampitiya
+
+=Colombo
+Colombo
+Kaduwela
+Dehiwala-Mount Lavinia
+Maharagama
+Moratuwa
+Kesbewa
+Sri Jayawardenepura Kotte
+Boralesgamuwa
+Kolonnawa
+Avissawella
+
+=Gampaha 
+Gampaha 
+Nittambuwa
+Biyagama
+Divulapitiya
+Kiridiwela
+Ja-Ela
+Katana
+Kelaniya
+Mahara
+Minuwangoda
+Mirigama
+Negombo
+Wattala
+
+
+
+=Kalutara
+Kalutara
+Agalawatta
+Bandaragama
+Beruwala
+Bulathsinhala
+Dodangoda
+Horana
+Kalutara
+Ingiriya
+Madurawela
+Matugama
+Millaniya
+Baduraliya
+Panadura
+Walallavita
+
+
+
+-- Insert cities into the city table
+INSERT INTO city (city_name, district_id) VALUES
+
+('Peradeniya', 1),
+('Katugastota', 1),
+('Pallekele', 1),
+('Gampola', 1),
+('Nawalapitiya', 1),
+('Akurana', 1),
+('Alawatugoda', 1),
+('Ankubura', 1),
+('Ambatenna', 1),
+('Daskara', 1),
+('Daulagala', 1),
+('Galagedara', 1),
+('Galhinna', 1),
+('Gelioya', 1),
+('Hanguranketa', 1),
+('Hapugastalawa', 1),
+('Kadugannawa', 1),
+('Katugastota', 1),
+('Kundasale', 1),
+('Madawala', 1),
+('Menikdiwela', 1),
+('Pilimatalawa', 1),
+('Pussellawa', 1),
+('Talatuoya', 1),
+('Teldeniya', 1),
+('Ulapane', 1),
+('Watadeniya', 1),
+('Wattegama', 1),
+('Welamboda', 1),
+('Weligalla', 1),
+('Udadumbara', 1),
+
+('Dambulla', 2),
+('Galewela', 2),
+('Naula', 2),
+('Pallepola', 2),
+('Rattota', 2),
+('Ukuwela', 2),
+('Yatawatta', 2),
+('Agrapatana', 3),
+('Ambewela', 3),
+('Bogawantalawa', 3),
+('Bopattalawa', 3),
+('Dayagama Bazaar', 3),
+('Ginigathena', 3),
+('Hapugastalawa', 3),
+('Haggala', 3),
+('Hanguranketha', 3),
+('Hatton-Dikoya', 3),
+('Kotagala', 3),
+('Kotmale', 3),
+('Labukele', 3),
+('Laxapana', 3),
+('Lindula-Talawakele', 3),
+('Maskeliya', 3),
+('Nildandahinna', 3),
+('Nanu Oya', 3),
+('Norton Bridge', 3),
+('Padiyapelella', 3),
+('Ramboda', 3),
+('Ragala', 3),
+('Rikillagaskada', 3),
+('Rozella', 3),
+('Udapussallawa', 3),
+('Walapane', 3),
+('Watawala', 3),
+('Norton', 3),
+('Koththallena', 3),
+('Pundaluoya', 3),
+('Kandapola', 3),
+('Pattipola', 3),
+
+('Addalaichchenai', 4),
+('Akkaraipattu', 4),
+('Alayadivembu', 4),
+('Damana', 4),
+('Dehiattakandiya', 4),
+('Irakkamam', 4),
+('Kalmunai', 4),
+('Kalmunai', 4),
+('Karaitivu', 4),
+('Lahugala', 4),
+('Maha Oya', 4),
+('Navithanveli', 4),
+('Nintavur', 4),
+('Padiyathalawa', 4),
+('Pottuvil', 4),
+('Sainthamaruthu', 4),
+('Sammanthurai', 4),
+('Thirukkovil', 4),
+('Uhana', 4),
+
+('Chenkalady', 5),
+('Kattankudy', 5),
+('Eravur', 5),
+('Valaichchenai', 5),
+('Pasikudah', 5),
+('Vakarai', 5),
+('Kiran', 5),
+('Oddamavadi', 5),
+('Araiyampathy', 5),
+('Kaluvanchikudy', 5),
+('Kokkadichcholai', 5),
+('Vavunathivu', 5),
+('Vellavely', 5),
+
+('Gomarankadawala', 6),
+('Kantalai', 6),
+('Kinniya', 6),
+('Kuchchaveli', 6),
+('Morawewa', 6),
+('Muttur', 6),
+('Siripura', 6),
+('Seruvila', 6),
+('Thampalakamam', 6),
+('Trincomalee', 6),
+('Verugal', 6),
+
+('Bulnewa', 7),
+('Eppawala', 7),
+('Galenbindunuwewa', 7),
+('Galnewa', 7),
+('Ganewalpola', 7),
+('Habarana', 7),
+('Horowupotana', 7),
+('Kahatagasdigiliya', 7),
+('Kebitigollawa', 7),
+('Kekirawa', 7),
+('Konapathirawa', 7),
+('Konwewa', 7),
+('Madatugama', 7),
+('Mahailuppallama', 7),
+('Maradankadawala', 7),
+('Medawachchiya', 7),
+('Mihintale', 7),
+('Nochchiyagama', 7),
+('Nachchaduwa', 7),
+('Padawiya', 7),
+('Palugaswewa', 7),
+('Rambewa', 7),
+('Seeppukulama', 7),
+('Talawa', 7),
+('Tambuttegama', 7),
+('Thirappane', 7),
+('Yakalla', 7),
+
+('Kaduruwela', 8),
+('Hingurakgoda', 8),
+('Minneriya', 8),
+('Bakamuna', 8),
+('Aralaganwila', 8),
+('Medirigiriya', 8),
+('Giritale', 8),
+('Elahera', 8),
+('Jayantipura', 8),
+('Galamuna', 8),
+('Lankapura', 8),
+('Sungavila', 8),
+('Manampitiya', 8),
+('Siripura', 8),
+('Welikanda', 8),
+('Dimbulagala', 8),
+('Thambala', 8),
+('Pulastigama', 8),
+
+('Kayts', 9),
+('Velanai', 9),
+('Jaffna', 9),
+('Karainagar', 9),
+('Nallur', 9),
+('Chavakachcheri', 9),
+('Maruthankerney', 9),
+('Point Pedro', 9),
+('Karaveddy', 9),
+('Kopay', 9),
+('Tellippalai', 9),
+('Uduvil', 9),
+('Sandilipay', 9),
+('Chankanai', 9),
+
+('Kandavalai', 10),
+('Pallai', 10),
+('Poonakary', 10),
+
+('Mannar', 11),
+('Madhu', 11),
+('Adampan', 11),
+('Chilawathurai', 11),
+('Nanaddan', 11),
+
+('Mullaitivu', 12),
+('Pandiyankulam', 12),
+('Oddusuddan', 12),
+('Puthukkudiyiruppu', 12),
+('Thunukkai', 12),
+('Ehatugaswewa', 12),
+
+('Vavuniya', 13),
+('Nedunkerny', 13),
+('Cheddikulam', 13),
+
+('Kuliyapitiya', 14),
+('Girathalana', 14),
+('Panagamuwa', 14),
+('Narammala', 14),
+('Wariyapola', 14),
+('Nikaweratiya', 14),
+('Pannala', 14),
+('Galgamuwa', 14),
+('Gomugomuwa', 14),
+('Polgahawela', 14),
+('Maho', 14),
+('Alawwa', 14),
+('Ibbagamuwa', 14),
+('Giriulla', 14),
+('Hiripitiya', 14),
+('Dandagamuwa', 14),
+('Dambadeniya', 14),
+('Melsiripura', 14),
+('Hettipola', 14),
+('Panduwasnuwara', 14),
+('Potuhera', 14),
+('Mawathagama', 14),
+('Yapahuwa', 14),
+('Bingirya', 14),
+('Pannawa', 14),
+('Ridigama', 14),
+
+('Chilaw', 15),
+('Anamaduwa', 15),
+('Battuluoya', 15),
+('Dankotuwa', 15),
+('Eluvankulam', 15),
+('Kalpitiya', 15),
+('Madampe', 15),
+('Mahawewa', 15),
+('Marawila', 15),
+('Mundel', 15),
+('Nattandiya', 15),
+('Nuraicholai', 15),
+('Palavi', 15),
+('Thillayadi', 15),
+('Wennappuwa', 15),
+('Katuneriya', 15),
+('Nainamadama', 15),
+
+('Kegalle', 16),
+('Ambepussa', 16),
+('Aranayaka', 16),
+('Bulathkohupitiya', 16),
+('Dehiovita', 16),
+('Deraniyagala', 16),
+('Galigamuwa', 16),
+('Hemmathagama', 16),
+('Karawanella', 16),
+('Kitulgala', 16),
+('Kotiyakumbura', 16),
+('Mawanella', 16),
+('Rambukkana', 16),
+('Ruwanwella', 16),
+('Thalgaspitiya', 16),
+('Warakapola', 16),
+('Yatiyanthota', 16),
+('Ganthuna', 16),
+
+('Ratnapura', 17),
+('Balangoda', 17),
+('Embilipitiya', 17),
+('Rakwana', 17),
+('Pelmadulla', 17),
+('Kuruwita', 17),
+('Imbulpe', 17),
+('Godakawela', 17),
+('Kahawatta', 17),
+('Eheliyagoda', 17),
+('Weligepola', 17),
+('Nivitigala', 17),
+('Ayagama', 17),
+('Kalawana', 17),
+('Kolonna', 17),
+('Panamure', 17),
+('Pohorabawa', 17),
+('Pallebedda', 17),
+('Udawalawe', 17),
+
+('Galle', 18),
+('Karapitiya', 18),
+('Unawatuna', 18),
+('Ambalangoda', 18),
+('Hikkaduwa', 18),
+('Ahangama', 18),
+('Ahungalla', 18),
+('Ambalangoda', 18),
+('Baddegama', 18),
+('Balapitiya', 18),
+('Batapola', 18),
+('Bentota', 18),
+('Boossa', 18),
+('Elpitiya', 18),
+('Habaraduwa', 18),
+('Hiniduma', 18),
+('Hikkaduwa', 18),
+('Imaduwa', 18),
+('Karandeniya', 18),
+('Koggala', 18),
+('Kosgoda', 18),
+('Mapalagama', 18),
+('Nagoda', 18),
+('Neluwa', 18),
+('Pitigala', 18),
+('Rathgama', 18),
+('Thawalama', 18),
+('Udugama', 18),
+('Uragasmanhandiya', 18),
+('Unawatuna', 18),
+('Wanduramba', 18),
+('Yakkalamulla', 18),
+
+('Tangalle', 19),
+('Ambalantota', 19),
+('Beliatta', 19),
+('Tissamaharama', 19),
+('Middeniya', 19),
+('Angunukolapelessa', 19),
+('Walasmulla', 19),
+('Weeraketiya', 19),
+
+('Aparekka', 20),
+('Weligama', 20),
+('Akuressa', 20),
+('Tihagoda', 20),
+('Mirissa', 20),
+('Deniyaya', 20),
+('Pitabeddara', 20),
+('Kamburupitiya', 20),
+('Thelijjawila', 20),
+('Malimbada', 20),
+('Welipitiya', 20),
+('Denipitiya', 20),
+('Welihinda', 20),
+('Morawaka', 20),
+('Nupe', 20),
+('Devinuwara', 20),
+('Gandara', 20),
+('Hakmana', 20),
+('Karaputugala', 20),
+
+('Bandarawela', 21),
+('Haputale', 21),
+('Mahiyanganaya', 21),
+('Diyatalawa', 21),
+('Hali-Ela', 21),
+('Ella', 21),
+('Haldummulla', 21),
+('Beragala', 21),
+('Welimada', 21),
+('Kandaketiya', 21),
+('Meegahakivula', 21),
+('Passara', 21),
+('Lunugala', 21),
+('Tennapanguwa', 21),
+('Kumarapattiya', 21),
+
+('Bibile', 22),
+('Buttala', 22),
+('Wellawaya', 22),
+('Kataragama', 22),
+('Siyambalanduva', 22),
+('medagama', 22),
+('Thanamalvila', 22),
+('Badalkubura', 22),
+('Sevanagala', 22),
+('madulla', 22),
+('Siyambalanduwa', 22),
+('Ethimale', 22),
+('Medagama', 22),
+('Thanamalwila', 22),
+('Badalkumbura', 22),
+('Madulla', 22),
+('Okkampitiya', 22),
+
+('Kaduwela', 23),
+('Dehiwala-Mount Lavinia', 23),
+('Maharagama', 23),
+('Moratuwa', 23),
+('Kesbewa', 23),
+('Sri Jayawardenepura Kotte', 23),
+('Boralesgamuwa', 23),
+('Kolonnawa', 23),
+('Avissawella', 23),
+
+('Nittambuwa', 24),
+('Biyagama', 24),
+('Divulapitiya', 24),
+('Kiridiwela', 24),
+('Ja-Ela', 24),
+('Katana', 24),
+('Kelaniya', 24),
+('Mahara', 24),
+('Minuwangoda', 24),
+('Mirigama', 24),
+('Negombo', 24),
+('Wattala', 24),
+
+('Agalawatta', 25),
+('Bandaragama', 25),
+('Beruwala', 25),
+('Bulathsinhala', 25),
+('Dodangoda', 25),
+('Horana', 25),
+('Kalutara', 25),
+('Ingiriya', 25),
+('Madurawela', 25),
+('Matugama', 25),
+('Millaniya', 25),
+('Baduraliya', 25),
+('Panadura', 25),
+('Walallavita', 25),
+
+
+
+
