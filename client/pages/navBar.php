@@ -14,7 +14,7 @@ session_start();
     <title>nav bar</title>
     <link rel="icon" href="../resources/labeta-01.ico" type="image/ico">
 
-
+    <meta name="geo.placename" content="Sri Lanka">
     <meta name="title" content="LabetaLK - Your Source for Fresh, Local Foods">
     <meta name="description" content="Discover and support local farmers with LabetaLK. Find fresh, locally grown foods and handmade products. Explore a diverse selection of farm-to-table options in our marketplace.">
     <meta name="keywords" content="LabetaLK, local foods, farmers market, fresh produce, handmade goods, farm-to-table, organic, sustainable, food ads, food marketplace">

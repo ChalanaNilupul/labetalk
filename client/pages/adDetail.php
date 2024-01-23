@@ -9,6 +9,24 @@ include('../../server/DB_Connect.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <meta name="title" content="LabetaLK - Your Source for Fresh, Local Foods">
+    <meta name="description" content="Discover and support local farmers with LabetaLK. Find fresh, locally grown foods and handmade products. Explore a diverse selection of farm-to-table options in our marketplace.">
+    <meta name="keywords" content="LabetaLK, local foods, farmers market, fresh produce, handmade goods, farm-to-table, organic, sustainable, food ads, food marketplace">
+    <meta name="author" content="LabetaLK">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://labetalk.com/">
+    <meta property="og:title" content="LabetaLK - Your Source for Fresh, Local Foods">
+    <meta property="og:description" content="Discover and support local farmers with LabetaLK. Find fresh, locally grown foods and handmade products. Explore a diverse selection of farm-to-table options in our marketplace.">
+    <meta property="og:image" content="../resources/labeta-01.png">
+
+    <meta property="twitter:card" content="LabetaLK">
+    <meta property="twitter:url" content="https://labetalk.com/">
+    <meta property="twitter:title" content="LabetaLK - Your Source for Fresh, Local Foods">
+    <meta property="twitter:description" content="Discover and support local farmers with LabetaLK. Find fresh, locally grown foods and handmade products. Explore a diverse selection of farm-to-table options in our marketplace.">
+    <meta property="twitter:image" content="../resources/labeta-01.png">
+    <link rel="icon" href="../resources/labeta-01.ico"
+            type="image/ico">
     <link rel="stylesheet" href="../css/adDetail.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../js/imgSelector.js"></script>
