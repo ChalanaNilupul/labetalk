@@ -47,8 +47,8 @@
         }
 
         echo " <div class='results'>
-        <p> <b><span>Search Results :</span></b>
-                    ".mysqli_num_rows($resultCount)." results found</p>
+        <input type='text' name='' id='search' class='txtSearch'>
+        <button class='btnSearch'> Search </button>
                </div>   ";
 
        

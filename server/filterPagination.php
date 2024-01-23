@@ -102,8 +102,8 @@ if (mysqli_num_rows($result) > 0) {
                 ";
     }
     echo " <div class='results'>
-    <p>  <b><span>Search Results :</span></b>
-                    " . mysqli_num_rows($resultCount) . " results found</p>
+    <input type='text' name='' id='search' class='txtSearch'>
+    <button class='btnSearch'> Search </button>
                </div>   ";
 
     $btns = mysqli_num_rows($resultCount) / 9;
@@ -117,8 +117,8 @@ if (mysqli_num_rows($result) > 0) {
 
 } else {
     echo " <div class='results'>
-    <p> <b><span>Search Results :</span></b>
-                        " . mysqli_num_rows($result) . " results found</p>
+    <input type='text' name='' id='search' class='txtSearch'>
+    <button class='btnSearch'> Search </button>
                 </div>   ";
     echo "No Results Found For Your Search";
 }

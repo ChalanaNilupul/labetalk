@@ -10,6 +10,24 @@ include('../../server/DB_Connect.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Ads</title>
+    <meta name="title" content="LabetaLK - Your Source for Fresh, Local Foods">
+    <meta name="description" content="Discover and support local farmers with LabetaLK. Find fresh, locally grown foods and handmade products. Explore a diverse selection of farm-to-table options in our marketplace.">
+    <meta name="keywords" content="LabetaLK, local foods, farmers market, fresh produce, handmade goods, farm-to-table, organic, sustainable, food ads, food marketplace">
+    <meta name="author" content="LabetaLK">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://labetalk.com/">
+    <meta property="og:title" content="LabetaLK - Your Source for Fresh, Local Foods">
+    <meta property="og:description" content="Discover and support local farmers with LabetaLK. Find fresh, locally grown foods and handmade products. Explore a diverse selection of farm-to-table options in our marketplace.">
+    <meta property="og:image" content="../resources/labeta-01.png">
+
+    <meta property="twitter:card" content="LabetaLK">
+    <meta property="twitter:url" content="https://labetalk.com/">
+    <meta property="twitter:title" content="LabetaLK - Your Source for Fresh, Local Foods">
+    <meta property="twitter:description" content="Discover and support local farmers with LabetaLK. Find fresh, locally grown foods and handmade products. Explore a diverse selection of farm-to-table options in our marketplace.">
+    <meta property="twitter:image" content="../resources/labeta-01.png">
+    <link rel="icon" href="../resources/labeta-01.ico"
+            type="image/ico">
 
     <link rel="stylesheet" href="../css/allAds.css">
     <script src="../js/navBar.js"></script>
@@ -44,7 +62,7 @@ include('../../server/DB_Connect.php');
                     <button>X</button>
                 </div>
                 <div class="filterIn">
-                    <form action="./allAds.php" method="POST">
+                    <form action="" method="POST">
                         <div class="location">
                             Add The location
                             <!-- <input type="text" name="location" id="loc"> -->
@@ -130,6 +148,8 @@ include('../../server/DB_Connect.php');
             </div>
             <div class="ads" id="ads">
 
+
+
                 <script>
                     $(document).ready(function() {
                         // Make an AJAX request
@@ -176,14 +196,14 @@ include('../../server/DB_Connect.php');
 
 
                         $(document).on('click', '.paginationBtn', function(e) {
-                           e.preventDefault();
-                           
+                            e.preventDefault();
+
                             var Data = {
                                 id: $(this).attr("id"),
                                 filter: true // Add a flag to indicate that this is a filter request
                             };
                             console.log(Data);
-                            
+
                             // AJAX request
                             $.ajax({
                                 type: 'POST',
@@ -200,8 +220,8 @@ include('../../server/DB_Connect.php');
 
 
                         $(document).on('click', '.paginationBtnFilter', function(e) {
-                           e.preventDefault();
-                           
+                            e.preventDefault();
+
                             var Data = {
                                 min: $('#minN').val(),
                                 max: $('#max').val(),
@@ -211,7 +231,7 @@ include('../../server/DB_Connect.php');
                                 filter: true // Add a flag to indicate that this is a filter request
                             };
                             console.log(Data);
-                            
+
                             // AJAX request
                             $.ajax({
                                 type: 'POST',
@@ -225,6 +245,38 @@ include('../../server/DB_Connect.php');
                                 }
                             });
                         });
+
+                        $(document).on('click', '.btnSearch', function() {
+
+                            var word = $('#search').val()
+
+                            if (word !== '') {
+                                var formData = {
+                                    word: word
+                                };
+
+                                // AJAX request
+                                $.ajax({
+                                    type: 'POST',
+                                    url: '../../server/search.php', // Update with the correct path to your PHP file
+                                    data: formData,
+                                    success: function(response) {
+                                        $('#ads').html(response);
+                                    },
+                                    error: function(xhr, status, error) {
+                                        console.log(xhr.responseText); // Log the response text for debugging
+                                        console.log(status); // Log the status for debugging
+                                        console.log(error); // Log the error for debugging
+                                        alert('Error occurred. Please try again.');
+                                    }
+                                });
+
+                            }
+
+
+
+                        })
+
 
 
                     });
@@ -241,6 +293,7 @@ include('../../server/DB_Connect.php');
     <?php
     include_once 'footer.php';
     ?>
+
 
 
 </body>

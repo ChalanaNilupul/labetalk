@@ -22,7 +22,7 @@
 
 .navBar img{
     width: 110px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 a{
@@ -103,12 +103,12 @@ a{
 }
 
 .menubar{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: #FFB800;
     position: fixed;
-    top: 20px;
-    right: 30px;
+    top: 15px;
+    right: 20px;
     border-radius: 25px;
     z-index: 4;
     display: none;

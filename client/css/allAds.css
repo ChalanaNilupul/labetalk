@@ -8,8 +8,8 @@
 
 .allAds {
   padding-top: 90px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .adsAreaA {
@@ -144,17 +144,41 @@
   grid-template-columns: auto auto auto;
   grid-gap: 15px;
   position: relative;
-  padding: 40px 0px;
+  padding: 50px 0px;
 }
 .results {
   position: absolute;
   font-size: 20px;
   text-align: left;
+  width: 100%;
 }
 .results span {
   color: #ffb800;
   margin-right: 5px;
 }
+.txtSearch{
+  width: 100%;
+  padding: 5px 10px;
+  /* box-shadow: 10px 4px 5.8px 0px rgba(0, 0, 0, 0.25); */
+  border: 2px solid #ffb800;
+  border-radius: 5px;
+  outline: none;
+  
+}
+.btnSearch{
+  position: absolute;
+  margin-top: 1px;
+  right: 0px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: white;
+  top: 0;
+  border: 0px;
+  border-radius: 5px;
+  border: 1px solid #ffb800;
+  background-color: #FFB800;
+}
+
 .pagination{
   position: absolute;
   bottom: -10px;
@@ -184,7 +208,7 @@
   height: 30px;
   background-color: #FFB800;
   top: 85px;
-  right: 30px;
+  right: 20px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -273,7 +297,10 @@
     width: 100%;
     margin-left: 0px;
   }
-
+  .allAds {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .filters {
     position: fixed;
     width: 100%;
@@ -307,15 +334,18 @@
   .filterBtn{
     display: flex;
     position: absolute;
+    right: 40px;
   }
-  .filterBtn{
-    display: flex;
-  }
+  .adsAreaA{
 
+    padding-top: 20px;
+  }
 }
 
 @media only screen and (max-width:540px) {
-
+  .filterBtn{
+    right: 20px;
+  }
   .ads {
     grid-template-columns: auto;
   }
@@ -323,5 +353,8 @@
 
     padding-top: 20px;
   }
-
+  .allAds {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
