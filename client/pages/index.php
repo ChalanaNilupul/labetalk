@@ -78,6 +78,7 @@ include('../../server/DB_Connect.php');
                                         $resultC = mysqli_query($con, $sql1);
 
                                         if (mysqli_num_rows($resultC) > 0) {
+                                            echo "<p class='dName' style='margin-bottom:10px;cursor:pointer'><b>anyCity</b></p>";
                                             while ($rowC = mysqli_fetch_assoc($resultC)) {
                                                 echo "<div class='lList'>
                                             <p class='dName'><b>" . $rowC['district_name'] . "</b></p>
