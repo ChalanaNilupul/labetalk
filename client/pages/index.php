@@ -67,7 +67,7 @@ include('../../server/DB_Connect.php');
                         <div class="align">
                             <div class="locationOut">
                                 Location
-                                <input type="text" name="place" id="place" placeholder="Location" required class="input place" style="outline:none;cursor:pointer" readonly><br>
+                                <input type="text" name="place" id="place" placeholder="Any City" required class="input place" style="outline:none;cursor:pointer" readonly><br>
 
                                 <div class="location">
                                     <div class="locationIn">
@@ -78,7 +78,7 @@ include('../../server/DB_Connect.php');
                                         $resultC = mysqli_query($con, $sql1);
 
                                         if (mysqli_num_rows($resultC) > 0) {
-                                            echo "<p class='dName' style='margin-bottom:10px;cursor:pointer'><b>anyCity</b></p>";
+                                            echo "<p class='dName' style='margin-bottom:10px;cursor:pointer'><b>Any City</b></p>";
                                             while ($rowC = mysqli_fetch_assoc($resultC)) {
                                                 echo "<div class='lList'>
                                             <p class='dName'><b>" . $rowC['district_name'] . "</b></p>
@@ -159,11 +159,16 @@ include('../../server/DB_Connect.php');
                         $('#filter').click(function(e) {
                             e.preventDefault();
 
+                            var locationSet=$('#place').val();
+                            if(locationSet === 'Any City'){
+                                locationSet = 'anyCity'
+                            }
+
                             var formData = {
                                 min: $('#minN').val(),
                                 max: $('#max').val(),
                                 category: $('#cat').val(),
-                                location: $('#place').val(),
+                                location: locationSet,
                                 filter: true // Add a flag to indicate that this is a filter request
                             };
                             console.log(formData);
@@ -189,7 +194,7 @@ include('../../server/DB_Connect.php');
                                 id: $(this).attr("id"),
                                 filter: true // Add a flag to indicate that this is a filter request
                             };
-                            console.log(Data);
+                            //console.log(Data);
 
                             // AJAX request
                             $.ajax({
@@ -209,15 +214,23 @@ include('../../server/DB_Connect.php');
                         $(document).on('click', '.paginationBtnFilter', function(e) {
                             e.preventDefault();
 
+                            var locationSet=$('#place').val();
+                            if(locationSet === 'Any City'){
+                                locationSet = 'anyCity'
+                            }
+                            if(locationSet === ''){
+                                locationSet = 'anyCity'
+                            }
+                            //console.log('locationSet'+locationSet)
                             var Data = {
                                 min: $('#minN').val(),
                                 max: $('#max').val(),
                                 category: $('#cat').val(),
-                                location: $('#place').val(),
+                                location: locationSet,
                                 id: $(this).attr("id"),
                                 filter: true // Add a flag to indicate that this is a filter request
                             };
-                            console.log(Data);
+                           //console.log(Data);
 
                             // AJAX request
                             $.ajax({
@@ -280,31 +293,41 @@ include('../../server/DB_Connect.php');
                             $('#place').val(districtWord);
                             parent.toggleClass('active');
 
-                            if (parent.hasClass('active')) {
-                                var formData = {
-                                    district: districtWord,
-                                };
+                            if (districtWord !== 'Any City') {
+                                if (parent.hasClass('active')) {
+                                    var formData = {
+                                        district: districtWord,
+                                    };
 
-                                // AJAX request
-                                $.ajax({
-                                    type: 'POST',
-                                    url: '../../server/locationFetch.php',
-                                    data: formData,
-                                    success: function(response) {
-                                        // Ensure that the '.dName' element is always present in the HTML content
-                                        var newContent = "<p class='dName'><b>" + districtWord + "</b></p>" + response + "";
-                                        parent.html(newContent);
-                                    },
-                                    error: function(xhr, status, error) {
-                                        console.log(xhr.responseText);
-                                        console.log(status);
-                                        console.log(error);
-                                        alert('Error occurred. Please try again.');
-                                    }
-                                });
-                            } else {
-                                parent.html("<p class='dName'><b>" + districtWord + "</b></p>");
+                                    // AJAX request
+                                    $.ajax({
+                                        type: 'POST',
+                                        url: '../../server/locationFetch.php',
+                                        data: formData,
+                                        success: function(response) {
+                                            // Ensure that the '.dName' element is always present in the HTML content
+                                            var newContent = "<p class='dName'><b>" + districtWord + "</b></p>" + response + "";
+                                            parent.html(newContent);
+                                        },
+                                        error: function(xhr, status, error) {
+                                            console.log(xhr.responseText);
+                                            console.log(status);
+                                            console.log(error);
+                                            alert('Error occurred. Please try again.');
+                                        }
+                                    });
+                                } else {
+                                    parent.html("<p class='dName'><b>" + districtWord + "</b></p>");
+                                }
                             }
+                            else{
+                                //console.log('Any city')
+                                parent.toggleClass('active');
+                                $('.location').toggleClass('active');
+                            }
+                            
+
+
                         });
 
                         $(document).on('click', '.cName', function(e) {
@@ -312,10 +335,10 @@ include('../../server/DB_Connect.php');
                             var city = $(this).text();
                             var dis = $(this).parent().find('p').text();
 
-                            console.log(city.length+'sdsd')
+                            console.log(city.length + 'sdsd')
 
                             $('#place').val(city);
-                           
+
                             parent.html("<p class='dName'><b>" + dis + "</b></p>");
                             $('.location').toggleClass('active');
                             parent.toggleClass('active');
@@ -332,11 +355,10 @@ include('../../server/DB_Connect.php');
                         target.html("<p class='dName'><b>" + targetText + "</b></p>");
                     }
 
-                    function allOf(){
+                    function allOf() {
                         city = $('#place').val();
                         $('#place').val(dis + ',' + city);
                     }
-
                 </script>
 
 

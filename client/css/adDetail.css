@@ -40,12 +40,33 @@ justify-content: center;
 .details{
     width: 70%;
 }
-.details .img{
+
+
+.imgOut{
+    width: 100%;
+    overflow-x: hidden;
+}
+.imgOut .img{
+    display:flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+.details .img .slide{
+    width: 100vw;
+}
+.img .slide img {
     width: 100%;
 }
-.details .img img {
-    width: 100%;
+.details .img button{
+    position: absolute;
 }
+#prev{
+    left: 0px;
+}
+#next{
+    right: 0px;
+}
+
 .imgSelector {
     display: flex;
     margin-bottom: 20px;

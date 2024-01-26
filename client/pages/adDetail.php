@@ -25,8 +25,7 @@ include('../../server/DB_Connect.php');
     <meta property="twitter:title" content="LabetaLK - Your Source for Fresh, Local Foods">
     <meta property="twitter:description" content="Discover and support local farmers with LabetaLK. Find fresh, locally grown foods and handmade products. Explore a diverse selection of farm-to-table options in our marketplace.">
     <meta property="twitter:image" content="../resources/labeta-01.png">
-    <link rel="icon" href="../resources/labeta-01.ico"
-            type="image/ico">
+    <link rel="icon" href="../resources/labeta-01.ico" type="image/ico">
     <link rel="stylesheet" href="../css/adDetail.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../js/imgSelector.js"></script>
@@ -67,36 +66,45 @@ include('../../server/DB_Connect.php');
 
                     <div class='images'>
 
-                    <div class='details'>
-                    <div class='img'>
-                        <img src='" . $row['img1'] . "' id='mainImg'>
-                    </div>
-                    <div class='imgSelector'>
-                        <!-- <div class='prev'>
-                                <
-                            </div> -->
-                        <div class='imgSet'>
-                            <img src='" . $row['img1'] . "' id='one' onclick='one()'>
-                            <img src='" . $row['img2'] . "'  id='two' onclick='two()'>
-                            <img src='" . $row['img3'] . "'  id='three' onclick='three()'>
-                            <img src='" . $row['img4'] . "'  id='four' onclick='four()'>
-                            <img src='" . $row['img5'] . "'  id='five' onclick='five()'>
+                        <div class='details'>
+                        <div class='imgOut' id='carouselContainer'>
+                            <div class='img' id='carousel'>
+                                
+                                <div class='slide'><img src='" . $row['img1'] . "' id='mainImg' ></div>
+                                <div class='slide'> <img src='" . $row['img2'] . "'  id='two' ></div>
+                                <div class='slide'><img src='" . $row['img3'] . "'  id='three' ></div>
+
+                                <button onclick='nextSlide()' id='next'>Pre</button>
+                                <button onclick='prevSlide()' id='prev'>Next</button>
+                                
+                            </div>
                         </div>
-                        <!-- <div class='next'>
-                                >
-                            </div> -->
+                        <div class='imgSelector'>
+                            <!-- <div class='prev'>
+                                    <
+                                </div> -->
+                            <div class='imgSet'>
+                                <img src='" . $row['img1'] . "' id='one' >
+                                <img src='" . $row['img2'] . "'  id='two' >
+                                <img src='" . $row['img3'] . "'  id='three' >
+                                <img src='" . $row['img4'] . "'  id='four' >
+                                <img src='" . $row['img5'] . "'  id='five' >
+                            </div>
+                            <!-- <div class='next'>
+                                    >
+                                </div> -->
+                        </div>
+                        <h2>RS " . $row['price'] . " /= </h2>
+                        <p>Location : " . $row['place'] . "</p>
+                        <p>Category : " . $row['category'] . "</p>
+
+                        <p> <b> Description </b> </p>
+
+                        <p>
+                            " . $row['description'] . "
+                        </p>
+
                     </div>
-                    <h2>RS " . $row['price'] . " /= </h2>
-                    <p>Location : " . $row['place'] . "</p>
-                    <p>Category : " . $row['category'] . "</p>
-
-                    <p> <b> Description </b> </p>
-
-                    <p>
-                        " . $row['description'] . "
-                    </p>
-
-                </div>
                 ";
 
                 $sql1 = "SELECT * FROM `rusers` WHERE `email`='" . $row['ownerMail'] . "'";
@@ -105,9 +113,9 @@ include('../../server/DB_Connect.php');
 
                 if (mysqli_num_rows($result1) > 0) {
 
-                $row1 = mysqli_fetch_assoc($result1);
+                    $row1 = mysqli_fetch_assoc($result1);
 
-                echo "
+                    echo "
 
                     <div class='seller'>
                     <div class='sDetail'>
@@ -128,7 +136,6 @@ include('../../server/DB_Connect.php');
                     </div>
                     
                 ";
-
                 }
             }
 
@@ -146,7 +153,50 @@ include('../../server/DB_Connect.php');
     <?php
     include_once 'footer.php';
     ?>
-    
+
+    <script>
+        let isDragging = false;
+        let startPosition = 0;
+        let currentTranslate = 0;
+
+        const carousel = document.getElementById('carousel');
+        const carouselContainer = document.getElementById('carouselContainer');
+
+        carousel.addEventListener('mousedown', dragStart);
+        carousel.addEventListener('touchstart', dragStart);
+
+        carousel.addEventListener('mouseup', dragEnd);
+        carousel.addEventListener('mouseleave', dragEnd);
+        carousel.addEventListener('touchend', dragEnd);
+
+        carousel.addEventListener('mousemove', drag);
+        carousel.addEventListener('touchmove', drag);
+
+        function dragStart(e) {
+            isDragging = true;
+            startPosition = e.type.startsWith('touch') ? e.touches[0].clientX : e.clientX;
+        }
+
+        function drag(e) {
+            if (!isDragging) return;
+
+            const currentPosition = e.type.startsWith('touch') ? e.touches[0].clientX : e.clientX;
+            const difference = currentPosition - startPosition;
+            const newTranslate = currentTranslate + difference;
+
+            carousel.style.transform = `translateX(${newTranslate}px)`;
+        }
+
+        function dragEnd() {
+            isDragging = false;
+            const currentPosition = currentTranslate + (startPosition - currentTranslate);
+            const newIndex = Math.round(currentPosition / window.innerWidth);
+
+            currentTranslate = newIndex * -window.innerWidth;
+            carousel.style.transform = `translateX(${currentTranslate}px)`;
+        }
+    </script>
+
 </body>
 
 </html>
