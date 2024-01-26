@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  padding-top: 100px;
+}
+
+.parent_container {
+  width: 70%;
+  padding: 30px;
+  background-color: #fff;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#error {
+  background-color: #ff2c2c;
+
+  color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+  display: none;
+}
+#msg {
+  position: fixed;
+  right: 30px;
+  top: 100px;
+  background-color: #00cc6a;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  pointer-events: none;
+  display: none;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 5;
+}
+#passError {
+  background-color: #ff2c2c;
+  color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+  display: none;
+}
+.deleteWindow {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: 10;
+  display: none;
+}
+.dmsg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  z-index: 11;
+  display: none;
+}
+.dmsg button {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-top: 10px;
+  width: 100px;
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+}
+.dmsg #yes {
+  background-color: #ff5a5a;
+}
+.dmsg #no {
+  background-color: #00cc6a;
+}
+.head h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.sub_container {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+}
+
+.content {
+  width: 70%;
+  height: fit-content;
+  padding-left: 20px;
+  position: relative;
+  background-color: #00cc6a;
+}
+.myads {
+  position: absolute;
+  width: 100%;
+  display: none;
+  overflow-y: auto;
+  height: 100vh;
+}
+.myads a{
+  color: black;
+}
+.adCards {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  display: flex;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+}
+.adCards:hover{
+  background-color: #d5d5d5;
+}
+.adImgs {
+  width: 20%;
+  height: 100%;
+  /* background-color: #c3c3c3; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.adImgs img {
+  width: 100%;
+}
+.adDetails {
+  margin-left: 15px;
+}
+
+.menu {
+  width: 30%;
+}
+
+.menu_context {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab_name {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  margin: 1.5%;
+  background: #ffb800;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tab_name:hover {
+  background-color: #ffc020;
+}
+
+.head_of_ads h1 {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+hr {
+  color: #333;
+}
+
+.settings {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.settings_head {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.settings_basic {
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: 450;
+}
+
+#user_email {
+  cursor: not-allowed;
+}
+
+.settings_txt_fields {
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  border: none;
+  background-color: #f3f3f3;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+#user_email {
+  background-color: #fff;
+  padding-left: 0;
+}
+
+.settings_btns {
+  text-align: right;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.settings_update_btn {
+  border-radius: 5px;
+  background-color: #ffb800;
+  width: 150px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.signup_regtxt {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.settings_update_btn:hover {
+  background-color: #ffc020;
+}
+
+.delete_logout_btn {
+  display: flex;
+  margin-top: 20px;
+  width: 250px;
+}
+
+.delete_logout_both_btn {
+  width: 100%;
+  display: flex;
+}
+
+.delete_logout_acc {
+  border-radius: 5px;
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  padding: 5px;
+  height: 30px;
+}
+
+#delete_acc_id {
+  background-color: #ff5a5a;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#delete_acc_id:hover {
+  background: #ff2c2c;
+}
+
+#logout_id {
+  background-color: #00cc6a;
+  color: white;
+  cursor: pointer;
+}
+
+#logout_id:hover {
+  background: #07aa5b;
+}
+
+/* ---------------- responsive ---------------- */
+
+@media only screen and (max-width: 778px) {
+  .parent_container {
+    width: 100%;
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .sub_container {
+    display: block;
+  }
+  .menu {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+  .tab_name {
+    margin-left: 0px;
+  }
+  .dmsg {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .parent_container {
+    padding: 10px;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.footer{
+    background-color: black;
+    width: 100%;
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 30px;
+}
+.footer p{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.footerIn{
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    /* padding-left: 10%; */
+    border-bottom: 1px solid white;
+}
+
+.fIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerIn div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footerIn li{
+    list-style: none;
+    cursor: pointer;
+}
+.footerIn a{
+    color: white;
+    text-decoration: none;
+}
+.footerIn h3{
+    margin-bottom: 10px;
+}
+.socials ul{
+    display: flex;
+}
+.socials ul li{
+    margin-right: 15px;
+}
+.newsletter p{
+    margin-bottom: 10px;
+    padding-left: 0;
+    text-align: left;
+}
+.newsletter input[type="email"]{
+    margin-bottom: 10px;
+    width: 50%;
+    border: 0px;
+    padding: 5px;
+}
+.newsletter button{
+    width: 100px;
+    border: 0px;
+    background-color:#FFB800 ;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.newsletter button:hover{
+
+    background-color: aliceblue;
+    color: black;
+
+}
+/* --------------------------------Responsive ----------------------------------------------*/
+
+@media only screen and (max-width:768px) {
+
+    .footerIn{
+        color: white;
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width:540px) {
+
+    .footerIn{
+        color: white;
+        display: grid;
+        grid-template-columns: auto ;
+        width: 100%;
+    }
+    .footerIn div{
+        text-align: center;
+    }
+    .socials ul{
+        justify-content: center;
+        align-items: center;
+    }
+    .newsletter p{
+        text-align: center;
+    }
+}

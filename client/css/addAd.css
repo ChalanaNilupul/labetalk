@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+.form{
+    
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+p{
+    margin-bottom: 5px;
+}
+.input{
+    border-radius: 5px;
+    border: none;
+    background-color: #f3f3f3;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+select{
+      border-radius: 5px;
+    border: none;
+    background-color: #f3f3f3;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.msg{
+    position: fixed;
+    top: 100px;
+    z-index: 2;
+    right: 30px;
+    background-color: rgb(0, 255, 81);
+    color: white;
+    padding: 5px 10px;
+    animation: msg 3s linear;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+}
+.location.active{
+    display: block;
+}
+.location{
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+    display: none;
+}
+.locationIn{
+    margin-top: 5px;
+    background-color: #f3f3f3;
+    padding: 5px;
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    overflow: auto;
+}
+.lList{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.location li{
+    list-style: none;
+    z-index: 2;
+
+}
+.location li:hover{
+    background-color: #ffffff;
+    
+}
+@keyframes msg {
+    0%{
+        display: flex;
+    }
+    10%{
+        opacity: 1;
+
+    }
+    80%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        display: none;
+    }
+}
+
+
+button{
+    width: 100%;
+    background-color: #ffb800;
+    border-radius: 5px;
+    border: none;
+    color: #f3f3f3;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .form{
+        width: 70%;
+    }
+  }
+@media only screen and (max-width: 540px) {
+    .form{
+        width: 90%;
+    }
+  }
