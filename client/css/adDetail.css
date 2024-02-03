@@ -6,182 +6,189 @@
   font-family: "Poppins", sans-serif;
 }
 
-.content{
-    padding-top: 90px;
-display: flex;
-width: 100%;
-justify-content: center;
+.content {
+  padding-top: 90px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
-.contentIn{
-    width:80%;
-    height: fit-content;
-    background: #fff;
-    box-shadow: 0px 4px 5.8px 0px rgba(0, 0, 0, 0.25);
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 30px;
+.contentIn {
+  width: 80%;
+  height: fit-content;
+  background: #fff;
+  box-shadow: 0px 4px 5.8px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
-.topic{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-
-.topic label{
-    padding: 20px;
-    cursor: pointer;
+.topic {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
-.images{
-    width: 100%;
-    display: flex;
-    margin-top: 20px;
-}
-.details{
-    width: 70%;
+.topic label {
+  padding: 20px;
+  cursor: pointer;
 }
 
+.images {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+.details {
+  width: 70%;
+}
 
-.imgOut{
-    width: 100%;
-    overflow-x: hidden;
+.imgOut {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
-.imgOut .img{
-    display:flex;
-    transition: transform 0.5s ease-in-out;
-    position: relative;
+.imgOut .img {
+  display: flex;
+  transition: transform 0.35s ease-in-out;
+  width: 500%;
+  
 }
-.details .img .slide{
-    width: 100vw;
+.details .img .slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .img .slide img {
-    width: 100%;
+  width: 100%;
 }
-.details .img button{
-    position: absolute;
+.details .imgOut button {
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 10px;
+    border: 0px;
+    cursor: pointer;
+    color: white;
 }
-#prev{
-    left: 0px;
+#prev {
+  left: 10px;
 }
-#next{
-    right: 0px;
+#next {
+  right: 10px;
 }
 
 .imgSelector {
-    display: flex;
-    margin-bottom: 20px;
+  display: flex;
+  margin-bottom: 20px;
 }
-.imgSelector .prev,.next{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    cursor: pointer;
+.imgSelector .prev,
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
 }
-.imgSet{
-    display: flex;
-    grid-gap: 10px;
-   
+.imgSet {
+  display: flex;
+  grid-gap: 10px;
 }
-.imgSet img{
-    width: 6vw;
-    transition: .3s;
-    cursor: pointer;
+.imgSet img {
+  width: 6vw;
+  transition: 0.3s;
+  cursor: pointer;
 }
-.imgSet img:hover{
-    opacity: 0.7;
+.imgSet img:hover {
+  opacity: 0.7;
 }
-.seller{
-    border: 1px solid #ffb800;
-    padding: 10px;
-    border-radius: 10px;
-    width: 30%;
-    height: fit-content;
-    margin-left: 10px;
+.seller {
+  border: 1px solid #ffb800;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+  height: fit-content;
+  margin-left: 10px;
 }
-.sDetail .div{
-    display: flex;
-}
-
-.sDetail .div .img{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+.sDetail .div {
+  display: flex;
 }
 
-.sDetail .div .img img{
-    width: 80%;
-}
-
-.name p{
-    margin-left: 20px;
-    margin-top: 10px;
-}
-.number{
-    border-top: 1px solid #ffb800;
-}
-.number p{
-    margin-top: 10px;
-    cursor: pointer;
-}
-.number p i{
-    margin-right: 10px;
-}
-.number p a{
-   text-decoration: none;
-   color: black;
-}
-.saveAd{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-
-
-@media only screen and (min-width:1600px) {
-
-    .contentIn{
-        width: 60%;
-
-    }
+.sDetail .div .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
   
 }
-
-
-@media only screen and (max-width:820px) {
-    .contentIn{
-        width:100%;
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
-        padding: 20px;
-    }
-    .images{
-        width: 100%;
-        display: block;
-        margin-top: 20px;
-    }
-    .imgSet img{
-        width: 10vw;
-    }
-    .details{
-        width: 100%;
-    }
-    .seller{
-        margin-top: 10px;
-        width: 50%;
-        height: fit-content;
-        margin-left: 0px;
-    }
+#carousel{
+  transform: translateX(0px);
 }
 
-@media only screen and (max-width:820px) {
 
+.sDetail .div .img img {
+  width: 80%;
+}
 
-    .seller{
-            width: 100%;
-    }
+.name p {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.number {
+  border-top: 1px solid #ffb800;
+}
+.number p {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.number p i {
+  margin-right: 10px;
+}
+.number p a {
+  text-decoration: none;
+  color: black;
+}
+.saveAd {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 
+@media only screen and (min-width: 1600px) {
+  .contentIn {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .contentIn {
+    width: 100%;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    padding:0px 20px 20px 20px;
+  }
+  .images {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+  }
+  .imgSet img {
+    width: 10vw;
+  }
+  .details {
+    width: 100%;
+  }
+  .seller {
+    margin-top: 10px;
+    width: 50%;
+    height: fit-content;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .seller {
+    width: 100%;
+  }
 }

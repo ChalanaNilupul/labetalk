@@ -58,9 +58,9 @@ include('../../server/DB_Connect.php');
 
         <div class="adsAreaA">
             <div class="filters" id="filters">
-                <div class="close" onclick="openFilter()">
+                <!-- <div class="close" onclick="openFilter()">
                     <button>X</button>
-                </div>
+                </div> -->
                 <div class="filterIn">
                     <form action="" method="POST">
 
@@ -78,7 +78,7 @@ include('../../server/DB_Connect.php');
                                         $resultC = mysqli_query($con, $sql1);
 
                                         if (mysqli_num_rows($resultC) > 0) {
-                                            echo "<p class='dName' style='margin-bottom:10px;cursor:pointer'><b>Any City</b></p>";
+                                            echo "<p class='dName' style='margin-bottom:10px;cursor:pointer;'><b>Any City</b></p>";
                                             while ($rowC = mysqli_fetch_assoc($resultC)) {
                                                 echo "<div class='lList'>
                                             <p class='dName'><b>" . $rowC['district_name'] . "</b></p>

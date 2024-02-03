@@ -136,7 +136,7 @@ include('../../server/DB_Connect.php');
                                                 
                 
                                             </td>
-                                            <td><button id='".$row["id"]."' class='active'>Active</button></td>
+                                            <td><button id='".$row["id"]."' class='active'> <input type='hidden' value='".$row["ownerMail"]."'>Active</button></td>
                                         </tr>
                                         
                                         ";
@@ -150,7 +150,7 @@ include('../../server/DB_Connect.php');
                         ?>
 
 
-                       
+                      
 
 
                     </table>
@@ -182,11 +182,13 @@ include('../../server/DB_Connect.php');
             $('.active').click(function(){
 
                 var id = $(this).attr('id');
+                var mail = $(this).find('input').val();
 
                 console.log(id)
 
                 var dataSet = {
-                    id: id
+                    id: id,
+                    mail:mail
                 };
 
                 //console.log(dataSet);

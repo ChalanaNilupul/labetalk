@@ -206,7 +206,7 @@ include('../../server/DB_Connect.php');
                                         labetaLK.com
                                     </div>
                                     <div class='in'>
-                                        Your Ad was successfully posted, stay in touch
+                                        Your ad is under review, we will make it live shortly
                                     </div>
                                     <div class='in' style='margin-top: 0;font-size:19px'>
                                         labetalk.com

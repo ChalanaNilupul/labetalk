@@ -68,14 +68,17 @@ include('../../server/DB_Connect.php');
 
                         <div class='details'>
                         <div class='imgOut' id='carouselContainer'>
+                        
+                        <button onclick='next();disableBtn()' id='next'><i class='fa-solid fa-arrow-right'></i></button>
+                        <button onclick='prev();disableBtn()' id='prev'><i class='fa-solid fa-arrow-left'></i></button>
                             <div class='img' id='carousel'>
                                 
                                 <div class='slide'><img src='" . $row['img1'] . "' id='mainImg' ></div>
                                 <div class='slide'> <img src='" . $row['img2'] . "'  id='two' ></div>
                                 <div class='slide'><img src='" . $row['img3'] . "'  id='three' ></div>
+                                <div class='slide'><img src='" . $row['img4'] . "'  id='three' ></div>
+                                <div class='slide'><img src='" . $row['img5'] . "'  id='three' ></div>
 
-                                <button onclick='nextSlide()' id='next'>Pre</button>
-                                <button onclick='prevSlide()' id='prev'>Next</button>
                                 
                             </div>
                         </div>
@@ -155,45 +158,138 @@ include('../../server/DB_Connect.php');
     ?>
 
     <script>
-        let isDragging = false;
-        let startPosition = 0;
-        let currentTranslate = 0;
-
         const carousel = document.getElementById('carousel');
         const carouselContainer = document.getElementById('carouselContainer');
 
-        carousel.addEventListener('mousedown', dragStart);
-        carousel.addEventListener('touchstart', dragStart);
 
-        carousel.addEventListener('mouseup', dragEnd);
-        carousel.addEventListener('mouseleave', dragEnd);
-        carousel.addEventListener('touchend', dragEnd);
+        //Next button ------------------------------------------------------
 
-        carousel.addEventListener('mousemove', drag);
-        carousel.addEventListener('touchmove', drag);
+        var divW = carousel.offsetWidth / 5;
+        var scroll = 0;
+        var temp = 0;
 
-        function dragStart(e) {
-            isDragging = true;
-            startPosition = e.type.startsWith('touch') ? e.touches[0].clientX : e.clientX;
+        function next() {
+            if (carousel.offsetWidth !== scroll + divW) {
+                var translateXValue = window.getComputedStyle($('#carousel')[0]).transform;
+                var translateX = parseInt(translateXValue.split(',')[4], 10);
+
+                console.log("translateX position:", translateX);
+
+                nextScrl = translateX + (divW * -1);
+
+                carousel.style.transform = `translateX(${nextScrl}px)`;
+
+                scroll += divW;
+
+                // Reset scroll when reaching the last item
+                if (scroll >= carousel.offsetWidth) {
+                    scroll = 0;
+                }
+            }
         }
 
-        function drag(e) {
-            if (!isDragging) return;
 
-            const currentPosition = e.type.startsWith('touch') ? e.touches[0].clientX : e.clientX;
-            const difference = currentPosition - startPosition;
-            const newTranslate = currentTranslate + difference;
 
-            carousel.style.transform = `translateX(${newTranslate}px)`;
+
+        //Prev button ------------------------------------------------------
+
+        function prev() {
+
+            var translateXValue = window.getComputedStyle($('#carousel')[0]).transform;
+
+            // Extract the translateX value from the matrix
+            var translateX = parseInt(translateXValue.split(',')[4], 10);
+
+            if (translateX == divW * 3) {
+                translateX = -1 * (divW * 3)
+            }
+
+
+
+            if (translateX < 0) {
+
+                prevScrl = translateX + (divW);
+
+                carousel.style.transform = `translateX(${prevScrl}px)`;
+
+                // console.log("translateX position:", translateX);
+
+                scroll -= divW;
+
+                if (translateX > -1 * ((divW + 5))) {
+                    carousel.style.transform = `translateX(0px)`;
+                    //console.log('diyaaa')
+                }
+
+                //console.log(translateX)
+
+            } else {
+                console.log('first')
+                carousel.style.transform = `translateX(0px)`;
+            }
+
+
         }
 
-        function dragEnd() {
-            isDragging = false;
-            const currentPosition = currentTranslate + (startPosition - currentTranslate);
-            const newIndex = Math.round(currentPosition / window.innerWidth);
+        var touchMoveInProgress = false;
 
-            currentTranslate = newIndex * -window.innerWidth;
-            carousel.style.transform = `translateX(${currentTranslate}px)`;
+        function handleTouchStart(event) {
+            startX = event.touches[0].clientX;
+            console.log(startX);
+            touchMoveInProgress = false; // Reset the flag on touch start
+        }
+
+        function handleTouchMove(event) {
+            if (!touchMoveInProgress) {
+                touchMoveInProgress = true; // Set the flag to indicate touch move is in progress
+                var currentX = event.touches[0].clientX;
+                var diffX = startX - currentX;
+                console.log('cc ' + currentX);
+                console.log('dddd ' + diffX);
+
+                if (diffX > 0) {
+                    // Swipe left
+                    next();
+
+                    startX = currentX; // Update start position for the next move
+                    $('#carousel').prop('disabled', true);
+                    setTimeout(() => {
+                        $('#carousel').prop('disabled', false);
+                    }, 350);
+                } else if (diffX < 0) {
+                    // Swipe right
+                    prev();
+
+                    startX = currentX; // Update start position for the next move
+                    $('#carousel').prop('disabled', true);
+                    setTimeout(() => {
+                        $('#carousel').prop('disabled', false);
+                    }, 350);
+                }
+                // No need to update startX outside of the conditionals
+            }
+        }
+
+        function handleTouchEnd() {
+            console.log("Touch interaction ended");
+
+            // Example: Reset any variables or states related to touch tracking
+            startX = null;
+            touchMoveInProgress = false; // Reset the flag on touch end
+        }
+
+        // Attach touch event listeners to your carousel element
+        carousel.addEventListener('touchstart', handleTouchStart, false);
+        carousel.addEventListener('touchmove', handleTouchMove, false);
+        carousel.addEventListener('touchend', handleTouchEnd, false);
+
+        function disableBtn() {
+            $('#next').prop('disabled', true);
+            $('#prev').prop('disabled', true);
+            setTimeout(() => {
+                $('#next').prop('disabled', false);
+                $('#prev').prop('disabled', false);
+            }, 350);
         }
     </script>
 
